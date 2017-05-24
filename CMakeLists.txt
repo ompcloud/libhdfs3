@@ -25,6 +25,10 @@ IF(OS_LINUX)
     FIND_PACKAGE(LibUUID REQUIRED)
 ENDIF(OS_LINUX)
 
+
+INCLUDE_DIRECTORIES(googletest/googlemock/include)
+INCLUDE_DIRECTORIES(googletest/googletest/include)
+
 ADD_SUBDIRECTORY(googletest)
 ADD_SUBDIRECTORY(mock)
 ADD_SUBDIRECTORY(src)
